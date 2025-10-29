@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  gap: 10px;
+  background-image: url("https://phunugioi.com/wp-content/uploads/2020/02/mau-background-dep.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box-1 {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: rotate3d();
+}
+.box-1:hover {
+  transform: scale(1.1);
+}
+.button-1 {
+  padding: 15px 30px;
+  background-color: aquamarine;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.button-1:hover {
+  border-color: blue;
+}
+
+.img-1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.p-1 {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.p-1:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+@keyframes focusAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.p-1:focus {
+  border-color: #66afe9;
+  outline: none;
+  animation: focusAnimation 1s ease infinite;
+  box-shadow: 0 0 10px rgba(102, 175, 233, 0.6);
+}
+
+.button-1:focus {
+  outline: none;
+  animation: focusAnimation 1s ease infinite;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.img-1:hover {
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+  outline: orangered;
+  animation: focusAnimation 1s ease infinite;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: transform 0.3s;
+}
+h1:hover {
+  transform: scale(1.1);
+}
